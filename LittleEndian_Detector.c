@@ -37,3 +37,7 @@ int main()
 	return 0;
 }
 
+int Test_Little_Endian()
+{
+    return 1;	
+}
