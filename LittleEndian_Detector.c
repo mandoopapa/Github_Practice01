@@ -48,12 +48,13 @@ int main()
 
 int Test_Little_Endian()
 {
-    int num;
+    int num = 0x00FF;
     int i = 0;
     for(i = 0; i<2; i++)
     {
-		printf("%p : ", &num +i);
+ 		printf("%p : ", &num +i);
 	    printf("%x \n", *((unsigned char *)&num +i));
     }
     return (*((unsigned char*)&num) == 0xFF);	
 }
+
